@@ -1,0 +1,17 @@
+<p class="message" ng-show="mensagem">{{mensagem}}</p>
+
+<form>
+	<div>
+	    <label>Titulo</label>
+
+	    <input ng-model="lembrete.title" type="text">
+	</div>
+
+	<div>
+	    <label>Corpo</label>
+
+	    <textarea ng-model="lembrete.body"></textarea>
+	</div>
+
+	<button ng-click="salvar()" ng-disabled="mensagem">Salvar</button>
+</form>
